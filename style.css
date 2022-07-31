@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+    color: #fff;
+   
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: rgb(0, 6, 32);
+}
+header{
+    width: 100%;
+    height: 70px; 
+    background: rgb(0, 2, 94);
+}
+#cont-header{
+    max-width: 992px;
+    height: 70px;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    margin: 0 auto;
+}
+#logo{
+    display: flex;
+    justify-content: flex-start;
+}
+#cont-header li{
+    float: left;
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
+
+}
+#cont-header img{
+    height: 25px;
+}
+
+
+h2{
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin: 10px;
+    text-align: center;
+}
+h2, h3, span{
+    color: rgba(255, 255, 255, 0.644);
+}
+br{
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+li{
+    padding: 5px 10px 0px 0px;
+}
+.container{
+    max-width: 992px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 10px;
+}
+.relato2{
+    max-width: 992px;
+    margin: 30px auto;
+    display: none;
+}
+.container-pelix{
+    max-width: 992px;
+    margin: 30px auto;
+    display: grid;
+    border-radius: 10px;
+   
+}
+.container-recomendaciones{
+    max-width: 992px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    row-gap: 25px;
+}
+#recomendaciones{
+    max-width: 992px;
+    margin: 30px auto;
+}
+.relato{
+    height: 95px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.cars{
+    height: 100%;
+}
+#menu{
+    display: flex;
+    justify-content: center;
+}
+.topnav {
+    height: 70px;
+    display: none;
+  }
+#myLinks{
+    position: relative;
+    top: 70px;
+    background: rgb(5, 0, 92);
+    border-radius: 0px 0px 10px 10px;
+}
+#myLinks a{
+    color: white;
+    padding: 14px 32px;
+    
+    
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+.topnav a.icon {
+    padding: 15px;
+    color: #fff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav a:hover {
+    background: rgb(2, 2, 109);
+    color: rgb(255, 255, 255);
+  }
+  .active {
+    background-color: #04AA6D;
+    color: rgb(255, 255, 255);
+  }
+.topnav i, img{
+    background: none;
+    border-radius: 0px;
+}
+.topnav #myLinks {
+    display: none;
+  }
+.container-recomendaciones img{
+    border-radius: 10px;
+}
+.container-ver-img{
+    width: 100%;
+    border-radius: 10px;
+}
+.container-ver-img .ver-img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.container-boton-trailer{
+    width: 100%;
+    height: 40px;
+    background: red;
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+span{
+    background: none;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.568);
+}
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: rgba(255, 255, 255, 0.568);
+}
+h1, li{
+    color: rgba(255, 255, 255, 0.8);
+}
+.redes{
+   display: flex;
+   justify-content: flex-end;
+
+}
+.redes > span{
+    padding-right: 10px;
+}
+.container-descripcion span{
+    font-size: 1rem; color: rgba(255, 255, 255, 0.637);
+}
+p{
+    color: rgba(255, 255, 255, 0.445);
+    line-height: normal;
+}
+footer{
+    text-align: center;
+    background: black;
+}
+footer .f-rd, i{
+    background: black;
+    padding: 5px 10px;
+}
+img{
+    background: none;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #cont-header img{
+        height: 15px;
+    }
+    #cont-header {
+        grid-template-columns: 2fr 1fr ;
+    }
+    .topnav{
+        display: inline-block;
+    }
+    .relato2 {
+       margin: 10px;
+       display: inline;
+    }
+    #menu{
+        display: none;
+    }
+   
+    .relato2 p{
+        margin: 0 10px;
+    }
+    
+    .container{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+    }
+    .container-pelix{
+        margin: 10px;
+        border-radius: 10px;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .container-descripcion{
+        display: grid;
+        gap: 10px;
+        align-items: center;
+    }
+    .container-recomendaciones{
+        margin: 10px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        gap: 15px;
+        row-gap: 30px;
+    }
+    #recomendaciones{
+        max-width: 600px;
+        margin: 10px;
+    }
+    .container-descripcion > div img{
+        height: 30px;
+        
+    }
+    .redes{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .relato{
+        display: none;
+    }
+    .container-ver-img .ver-img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+iframe{
+    border-radius: 10px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container{
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 10px;
+    }
+    .container-descripcion{
+        display: grid;
+        grid-template-rows: repeat(3) 1fr;
+        gap: 10px;
+        align-items: center;
+    }
+    .redes{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .container-recomendaciones{
+        margin: 10px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+        gap: 15px;
+        row-gap: 30px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container-descripcion{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin:10px 0px;
+        
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
